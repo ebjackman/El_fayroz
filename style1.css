@@ -1,0 +1,126 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+
+    body {
+      background: #fff8f0;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #ffb6c1;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 1100px;
+      aspect-ratio: 16/9;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .slides {
+      display: flex;
+      direction: ltr;
+      height: 100%;
+      animation: slideAnimation 24s infinite ;
+    }
+
+    .slides img {
+      flex:0 0 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @keyframes slideAnimation {
+      0% { transform: translateX(0); }
+      14% { transform: translateX(0); }
+      16% { transform: translateX(-100%); }
+      30% { transform: translateX(-100%); }
+      32% { transform: translateX(-200%); }
+      46% { transform: translateX(-200%); }
+      48% { transform: translateX(-300%); }
+      62% { transform: translateX(-300%); }
+      64% { transform: translateX(-400%); }
+      78% { transform: translateX(-400%); }
+      80% { transform: translateX(-500%); }
+      100% { transform: translateX(-500%); }
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 15px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      border-top: 5px solid #ff9a9e;
+    }
+
+    .card h2 {
+      color: #e85d75;
+      margin-bottom: 10px;
+    }
+
+    .phone{
+      direction: ltr;
+      unicode-bidi: bidi-override;
+    }
+    footer {
+      background: #ffb6c1;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .slider {
+        height: 250px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 10px;
+      }
+    }
