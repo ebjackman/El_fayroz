@@ -54,7 +54,7 @@
       direction: ltr;
       height: 100%;
       animation-timing-function: ease-in-out;
-      animation: slideAnimation 24s infinite alternate;
+      animation: slideAnimation 24s infinite;
     }
 
     .slides img {
