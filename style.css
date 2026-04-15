@@ -65,22 +65,24 @@
       display: block;
     }
 
-     @keyframes slideAnimation {
-  0%, 10%   { transform: translateX(0); }
+   @keyframes slideAnimation {
+  0%, 8%     { transform: translateX(0); }
 
-  12.5%, 22.5% { transform: translateX(-100%); }
+  11.11%, 19% { transform: translateX(-100%); }
 
-  25%, 35%  { transform: translateX(-200%); }
+  22.22%, 30% { transform: translateX(-200%); }
 
-  37.5%, 47.5% { transform: translateX(-300%); }
+  33.33%, 41% { transform: translateX(-300%); }
 
-  50%, 60%  { transform: translateX(-400%); }
+  44.44%, 52% { transform: translateX(-400%); }
 
-  62.5%, 72.5% { transform: translateX(-500%); }
+  55.55%, 63% { transform: translateX(-500%); }
 
-  75%, 85%  { transform: translateX(-600%); }
+  66.66%, 74% { transform: translateX(-600%); }
 
-  87.5%, 100% { transform: translateX(-700%); }
+  77.77%, 85% { transform: translateX(-700%); }
+
+  88.88%, 100% { transform: translateX(-800%); }
 }
 
     .content {
