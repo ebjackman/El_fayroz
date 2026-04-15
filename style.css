@@ -54,7 +54,7 @@
       direction: ltr;
       height: 100%;
       animation-timing-function: ease-in-out;
-      animation: slideAnimation 24s infinite;
+      animation: slideAnimation 45s infinite;
     }
 
     .slides img {
@@ -65,24 +65,42 @@
       display: block;
     }
 
-   @keyframes slideAnimation {
-  0%, 8%     { transform: translateX(0); }
+  @keyframes slideAnimation {
+  0%, 4%       { transform: translateX(0); }
 
-  11.11%, 19% { transform: translateX(-100%); }
+  5.55%, 9%    { transform: translateX(-100%); }
 
-  22.22%, 30% { transform: translateX(-200%); }
+  11.11%, 15%  { transform: translateX(-200%); }
 
-  33.33%, 41% { transform: translateX(-300%); }
+  16.66%, 20%  { transform: translateX(-300%); }
 
-  44.44%, 52% { transform: translateX(-400%); }
+  22.22%, 26%  { transform: translateX(-400%); }
 
-  55.55%, 63% { transform: translateX(-500%); }
+  27.77%, 31%  { transform: translateX(-500%); }
 
-  66.66%, 74% { transform: translateX(-600%); }
+  33.33%, 37%  { transform: translateX(-600%); }
 
-  77.77%, 85% { transform: translateX(-700%); }
+  38.88%, 42%  { transform: translateX(-700%); }
 
-  88.88%, 100% { transform: translateX(-800%); }
+  44.44%, 48%  { transform: translateX(-800%); }
+
+  50%, 54%     { transform: translateX(-900%); }
+
+  55.55%, 59%  { transform: translateX(-1000%); }
+
+  61.11%, 65%  { transform: translateX(-1100%); }
+
+  66.66%, 70%  { transform: translateX(-1200%); }
+
+  72.22%, 76%  { transform: translateX(-1300%); }
+
+  77.77%, 81%  { transform: translateX(-1400%); }
+
+  83.33%, 87%  { transform: translateX(-1500%); }
+
+  88.88%, 93%  { transform: translateX(-1600%); }
+
+  94.44%, 100% { transform: translateX(-1700%); }
 }
 
     .content {
